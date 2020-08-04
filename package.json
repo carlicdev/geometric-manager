@@ -1,15 +1,25 @@
 {
   "name": "geometric-manager",
   "version": "1.0.0",
-  "description": "geometric dashboard",
+  "description": "Geometric Dashboard",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "CarliC",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.9.27"
+    "mongoose": "^5.9.27",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
   }
 }
