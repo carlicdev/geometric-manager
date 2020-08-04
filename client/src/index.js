@@ -3,12 +3,13 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import EmailContextProvider from './email.context';
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <EmailContextProvider>
     <App />
-  </React.StrictMode>,
+    </EmailContextProvider>,
   document.getElementById('root')
 );
 

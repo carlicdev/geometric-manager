@@ -8,4 +8,9 @@ router.get('/', async (req, res) => {
     res.send(emails);
 });
 
+router.get('/:id', async (req, res) => {
+    const email = await Email.findById({_id: req.params.id});
+    res.send(email);
+})
+
 module.exports = router;
