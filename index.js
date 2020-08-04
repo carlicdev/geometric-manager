@@ -21,7 +21,7 @@ app.use(morgan('dev'));
 
 
 // Api
-app.use('/', emailRouter);
+app.use('/emails', emailRouter);
 
 app.listen(app.get('PORT'), () => {
     console.log(`Server on PORT: ${app.get('PORT')}`);
