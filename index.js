@@ -8,6 +8,7 @@ const emailRouter = require('./server/routes/emails')
 // Database
 require('./server/db/db');
 
+//Im testing with this comment
 
 // Settings
 app.set('PORT', process.env.PORT || 5000 );
